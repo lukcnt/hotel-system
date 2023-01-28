@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace hotel_system.Models
 {
-    public class Reservartion
+    public class Reservation
     {
         public List<Person> Guest { get; set; }
         public Suite Suite { get; set; }
