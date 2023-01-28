@@ -8,6 +8,7 @@ namespace hotel_system.Models
     public class Reservartion
     {
         public List<Person> Guest { get; set; }
+        public Suite Suite { get; set; }
         public int BookedDays { get; set; }
     }
 }
