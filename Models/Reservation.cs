@@ -7,6 +7,16 @@ namespace hotel_system.Models
 {
     public class Reservation
     {
+        public Reservation()
+        {
+
+        }
+
+        public Reservation(int bookedDays)
+        {
+            BookedDays = bookedDays;
+        }
+
         public List<Person> Guest { get; set; }
         public Suite Suite { get; set; }
         public int BookedDays { get; set; }
