@@ -25,5 +25,19 @@ namespace hotel_system.Models
         {
             Suite = suite;
         }
+
+        public void RegisterGuests(List<Person> guests)
+        {
+            bool verifyCapacity = Suite.Capacity >= guests.Count;
+
+            if (verifyCapacity)
+            {
+                Guests = guests;
+            }
+            else
+            {
+                throw new Exception("The capacity of the suite is shorter than the number fo guests.");
+            }
+        }
     }
 }
