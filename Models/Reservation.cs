@@ -20,5 +20,10 @@ namespace hotel_system.Models
         public List<Person> Guests { get; set; }
         public Suite Suite { get; set; }
         public int BookedDays { get; set; }
+
+        public void RegisterSuite(Suite suite)
+        {
+            Suite = suite;
+        }
     }
 }
