@@ -46,5 +46,17 @@ namespace hotel_system.Models
 
             return guestsQuantity;
         }
+
+        public decimal CalculateDailyFee()
+        {
+            decimal valor = BookedDays * Suite.DailyPrice;
+
+            if (BookedDays >= 10)
+            {
+                valor = valor - (valor * 0.10M);
+            }
+
+            return valor;
+        }
     }
 }
