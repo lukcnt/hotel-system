@@ -39,5 +39,12 @@ namespace hotel_system.Models
                 throw new Exception("The capacity of the suite is shorter than the number fo guests.");
             }
         }
+
+        public int GetGuestsQuantity()
+        {
+            int guestsQuantity = Guests.Count;
+
+            return guestsQuantity;
+        }
     }
 }
